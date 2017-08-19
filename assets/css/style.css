@@ -1,0 +1,14 @@
+img{
+	height: 200px;
+	width: 200px;
+	padding: 15px;
+	align-content: center;
+}
+body{
+	background-image: url(../images/wormz.png);
+	font-family: arial;
+}
+.jumbotron{
+	background-color: #664b8e;
+	color: white;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Crystal Collector Game</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class='container'>
+	<div class='jumbotron text-center'>
+		<h1>Crystals Collector!</h1>		
+	</div>
+	<div class='row' id='instructions'>
+		<div class='col-md-12 text-center'>
+			<div class="panel panel-danger">
+          		<div class="panel-heading">
+            	<h3 class="panel-title">Instructions</h3>
+          		</div>
+          		<div class="panel-body">
+            	<p>You will be given a random number at the start of the game.</p>
+            	<p>By clicking on the crystals below you will add points to your total score.</p>
+            	<p>You win the game by matching your total score to the random number. If you go over the random number, you will lose.</p>
+            	<p>The value of each crystal is hidden from you until they are clicked. When the game restarts, the value of each crystal will change as well.</p>
+          	</div>
+        	</div>
+		</div>
+	</div>
+	<div class='row' id='game'>
+		<div class='col-md-4'>
+			<div class="panel panel-danger text-center">
+          		<div class="panel-heading">
+            	<h3 class="panel-title">Target Number</h3>
+          	</div>
+          	<div class="panel-body">
+            	<p id="targetNumber"></p>
+          	</div>
+        	</div>			
+		</div>
+		<div class='col-md-2'>
+			<div class="panel panel-danger text-center">
+          		<div class="panel-heading">
+            	<h3 class="panel-title">Wins</h3>
+          	</div>
+          	<div class="panel-body">
+            	<p id="wins"></p>
+          	</div>
+        	</div>			
+		</div>
+		<div class='col-md-2'>
+			<div class="panel panel-danger text-center">
+          		<div class="panel-heading">
+            	<h3 class="panel-title">Losses</h3>
+          	</div>
+          	<div class="panel-body">
+            	<p id="losses"></p>
+          	</div>
+        	</div>			
+		</div>		
+		<div class='col-md-4'>
+			<div class="panel panel-danger text-center">
+          		<div class="panel-heading">
+            	<h3 class="panel-title">Your Total Score</h3>
+          	</div>
+          	<div class="panel-body">
+            	<p id="playerScore"></p>
+          	</div>
+        	</div>			
+		</div>
+	</div>
+	<div class='row' id='crystals'>
+	<div class='col-md-2'></div>
+		 <div class="pannel panel-primary panel-body col-md-10">
+          <img src="assets/images/orangeCrystal.png" id='image'>
+          <img src="assets/images/blueCrystal.png" id='image'>
+          <img src="assets/images/greenCrystal.png" id='image'>
+          <img src="assets/images/redCrystal.png" id='image'>
+        </div>
+	</div>		
+
+
+</div>
+ <script type="text/javascript" src='assets/javascript/game.js'></script>
+</body>
+</html>
